@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'Audiowide', sans-serif;
+    background-color: black;
+    color: white;
+  }
+  .Header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: black;
+    border-bottom: 2px solid white;
+  }
+  .Header h1 {
+    font-size: 3rem;
+    text-shadow: 5px 5px 8px rgba(255, 255, 255, 1);
+  }
+  .Header .video-container video {
+    width: 80%;
+    border: 2px solid white;
+    margin: 1rem auto;
+    display: block;
+  }
+  .image-scroller::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .image-scroller img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  .image-scroller img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.7);
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+    margin-top: 2rem;
+    border-top: 2px solid white;
+  }
+  .image-scroller {
+    display: flex;
+    width:100%;
+    overflow-x: hidden;
+    padding: 1rem;
+    gap: 2rem;
+    animation: scroll 30s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
