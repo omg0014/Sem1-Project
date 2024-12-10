@@ -74,3 +74,13 @@ h1, h2 {
 li {
     margin: 0.5rem 0;
 }
+
+a{
+    color:black;
+}
+a:hover{
+    color:white;
+}
+a:visited{
+    color:White;
+}
