@@ -22,6 +22,151 @@
     }
 }
 
+@font-face {
+    font-family: 'Ftregolaneuse';
+    src: url('path-to-font/Ftregolaneuse.woff') format('woff'),
+         url('path-to-font/Ftregolaneuse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fixed{
+    color:#151414;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+    background-color: rgb(138, 189, 212, 0.6);
+    padding: 20px;
+    position: fixed;             
+    top: 0;                      
+    left: 0;  
+    width:100%; 
+    z-index: 1000; 
+    border-bottom: 2px solid #fbfbfa;
+    font-weight:700;
+}
+
+a{
+    color:black;
+}
+a:hover{
+    color:white;
+}
+
 body{
     background-color: #D4CDC5;
+}
+
+.notes {
+    font-size: 54px;
+}
+
+/* Button styling */
+button {
+    border: 5px solid black;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+/* Vertical Line */
+.vertical-line {
+    width: 2px;
+    height: 350px;
+    background-color: black;
+    margin-left: 20px; /* Adjust spacing for visual balance */
+}
+
+/* Responsive adjustments */
+@media (max-width: 870px) {
+    .vertical-line {
+        display: none;
+    }
+
+    .slider {
+        width: 100%;
+        height: 200%; /* Adjust size for smaller screens */
+        margin-top: 20px;
+    }
+    .slides{
+        display: flex;
+    width: 500px;
+    height: 200px;
+    margin-left: 0vw;
+    padding-bottom:10px;
+    padding:0px;
+    }
+
+    .slides .slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+        border: 2px solid black;
+    }
+
+    .notes {
+        font-size: 36px;
+    }
+
+    .innovative{
+        width:370px;
+    }
+}
+
+body{
+    margin: 0;
+    background-color: #D4CDC5;
+    border: 0;
+    padding: 0;
+    background-image: 
+      linear-gradient(to right, rgba(166, 163, 163, 0.5) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(166, 163, 163, 0.5) 1px, transparent 1px);
+    background-size: 100px 100px;
+}
+
+
+footer {
+    margin-top:30px;
+    color: Black;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;  /* Allow items to wrap when the screen is smaller */
+    justify-content:start;  /* Center the items horizontally */
+    gap: 20px;  /* Add space between the items */
+}
+
+.footer-item {
+    flex: 1 1 150px;  /* Allow each item to grow and shrink, with a minimum width of 150px */
+    
+}
+
+.footer-item a {
+    color: Black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display:inline-block;
+}
+
+.footer-item a:hover {
+    color: #EBFD40;  /* Change color on hover */
+}
+
+.linkedin:hover{
+    cursor:pointer;
+}
+
+@media (max-width:876px){
+    .foot{
+        margin-left:0px;
+    }
+}
+
+.foot{
+    margin-left:100px
 }
