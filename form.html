@@ -1,142 +1,75 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    background-color: #070707;
-    background-image: 
-        linear-gradient(to right, rgba(248, 246, 246, 0.2) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(242, 239, 239, 0.2) 1px, transparent 1px);
-    background-size: 100px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-.form-container {
-    background: white;
-    border-radius: 50px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    max-width: 700px;
-    width: 100%;
-    z-index: 2;
-    position: relative;
-    color: black;
-}
-
-h1 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: black;
-    text-align: center;
-    text-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-}
-
-.form-group {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-input, textarea, select {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 50px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.1);
-    color: black;
-}
-
-input:focus, textarea:focus, select:focus {
-    border-color: #3498db;
-    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
-    outline: none;
-}
-
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-select {
-    background-color: white;
-    color: black;
-    border: 1px solid #ddd;
-    border-radius: 50px; 
-    padding: 10px;
-    font-size: 14px;
-    appearance: none;
-    cursor: pointer;
-}
-
-option {
-    background-color: white;
-    color: black;
-}
-
-label {
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: black;
-}
-
-.btn {
-    background-color: #3498db;
-    color: black;
-    border: none;
-    padding: 15px;
-    border-radius: 50px;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-    width: 100%;
-}
-
-.btn:hover {
-    background-color: #2980b9;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(41, 128, 185, 0.4);
-}
-
-p {
-    font-size: 14px;
-    color: black;
-    text-align: center;
-    margin-top: 15px;
-    line-height: 1.5;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.container {
-    background: black;
-    border: 0.1px solid white;
-    border-radius: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    aspect-ratio: 1;
-    margin: auto;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Trends Feedback</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Tell Us What Interests You in AI Trends</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" id="first-name" name="first_name" placeholder="First Name*" required>
+                <input type="text" id="last-name" name="last_name" placeholder="Last Name*" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email Address*" required>
+            </div>
+            <div class="form-group">
+                <label for="area-of-interest">Area of Interest in AI*</label>
+                <select id="area-of-interest" name="area_of_interest" required>
+                    <option value="" disabled selected>Select your area of interest</option>
+                    <option value="Generative AI">Generative AI</option>
+                    <option value="Machine Learning Applications">Machine Learning Applications</option>
+                    <option value="Ethical AI">Ethical AI</option>
+                    <option value="AI in Healthcare">AI in Healthcare</option>
+                    <option value="AI and Sustainability">AI and Sustainability</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="blog-interest">What are you looking for in our blog?*</label>
+                <select id="blog-interest" name="blog_interest" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="In-depth technical articles">In-depth technical articles</option>
+                    <option value="Latest AI news and trends">Latest AI news and trends</option>
+                    <option value="Beginner-friendly guides">Beginner-friendly guides</option>
+                    <option value="Expert interviews and insights">Expert interviews and insights</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="content-format">Your Preferred Content Format*</label>
+                <select id="content-format" name="content_format" required>
+                    <option value="" disabled selected>Select Content Format</option>
+                    <option value="Videos">Videos</option>
+                    <option value="Articles">Articles</option>
+                    <option value="Podcasts">Podcasts</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" rows="5" placeholder="Your Message (Share your suggestions, feedback, or specific topics you’d like us to cover!)"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="how-did-you-find-us">How did you find us?*</label>
+                <select id="how-did-you-find-us" name="how_find_us" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Google Search">Google Search</option>
+                    <option value="Referred by a Friend">Referred by a Friend</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>
+                    <p> Stay Updated! By submitting this form, you agree to receive updates and insights from AI Trends Blog. You can unsubscribe anytime.</p>
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
