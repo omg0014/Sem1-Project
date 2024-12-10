@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -55,7 +57,38 @@
         </div>
     </grid>
 
-    <div style="display: flex; justify-content: space-evenly; margin-top: 1rem; flex-wrap:wrap">
+    <div style="background-color: #EBFD40; padding:25px; margin-top:15px;" class="Yellow">
+        <div style="background: #FFFF; padding:10px 20px; border-radius:50px; width:80px; text-align: center; font-family:Arial, Helvetica, sans-serif; font-weight: 600; margin-top:20px">NOTES</div>
+        <div style="display:flex; flex-wrap:wrap; align-items: flex-start;">
+            <!-- Text Content -->
+            <div style="padding:20px; padding-bottom:30px;">
+                <div class="notes" style="margin-top:50px; font-family:'Montserrat';font-weight:700; width:250px">NOTES ON THE AI REVOLUTION</div>
+                <button style=" border-radius: 50px; background-color: black; color: white;  display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;">
+                    <span style="margin-right: 5px;">VIEW MORE</span>
+                    <span style="display: flex; align-items: center; justify-content: center; background-color: white; color: black; width: 25px; height: 25px; border-radius: 50%; font-size: 16px; font-weight: bold; transition: transform 0.2s ease;">→</span>
+                </button>
+            </div>
+    
+            <!-- Vertical Line -->
+            <div class="vertical-line" style="width: 2px; height: 70vh; background-color: black; margin-left:10%;"></div> 
+
+            <!-- Slider -->
+            <div class="slider" style="flex-grow: 1;">
+                <div class="slides" style="display: flex; overflow-x: auto; scroll-behavior: smooth;  justify-content:space-around;">
+                    <!-- Slide 1 -->
+                    <div class="slide" style="flex: none; width: 100%; "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToWtX0ni42VbMiBifS5luMVAz0abL8TRmDLNvor9U-m-1Md9wOFH0V5ZCq7khU5_J-xZY&usqp=CAU" alt="Image 3" style="height:100%; width:100%; border-radius: 50px; "/></div>
+                    <div class="slide" style="flex:0 0 10vw"></div>
+                    <!-- Slide 2 -->
+                    <div class="slide" style="flex: none; width: 100%;"><img src="https://cdn.prod.website-files.com/646c996dece104b42843d191/67064cf3448ba259421ed82e_66781312ccf931f6847e7b48_Screenshot%25202024-06-23%2520at%25203.20.04%2520PM.png?hl=en-IN" alt="Image 1" style="height:100%; width:100%; border-radius: 50px;"/></div>
+                    <div class="slide" style="flex:0 0 10vw"></div>
+                    <!-- Slide 3 -->
+                    <div class="slide" style="flex: none; width: 100%;"><img src="https://media.licdn.com/dms/image/D5612AQEz1CWosNVvLQ/article-cover_image-shrink_720_1280/0/1709702686443?e=2147483647&v=beta&t=hDbQKHZ_y3ACkSo-wTuhqLh9dk2jqZ3WqdLhaEO0xZo" alt="Image 5" style="height:100%; width:100%; border-radius: 50px;"></div>
+                </div>
+            </div>       
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-evenly; margin-top: 5rem; flex-wrap:wrap">
         <!-- First Card -->
         <div class="content-container">
             <div class="card">
@@ -92,7 +125,6 @@
                 </div>
             </div>
         </div>
-    
         <!-- Third Card -->
         <div class="content-container">
             <div class="card">
@@ -111,42 +143,40 @@
             </div>
         </div>
     </div>
-    
-    <div style="background-color: #EBFD40; padding:25px; margin-top:20px; width:100%">
-        <div style="background: #FFFF; padding:10px 20px; border-radius:50px; width:80px; text-align: center; font-family:Arial, Helvetica, sans-serif; font-weight: 600; margin-top:20px">NOTES</div>
-        <div style="display:flex; flex-wrap:wrap">
-            
-            <div style="padding:20px; padding-bottom:30px;">
-                <div style="margin-top:50px; font-size:54px; font-family: 'Courier New', Courier, monospace; width:250px">NOTES ON THE AI REVOLUTION</div>
-                <button style="border: 5px solid black; border-radius: 50px; background-color: black; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;" >
-                    <span style="margin-right: 5px;">VIEW MORE</span>
-                    <span style="display: flex; align-items: center; justify-content: center; background-color: white; color: black; width: 25px; height: 25px; border-radius: 50%; font-size: 16px; font-weight: bold; transition: transform 0.2s ease;">→</span>
-                </button>
-            </div>
-
-            <div class="slider">
-                <div class="slides">
-                    <!-- Slide 1 -->
-                    <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToWtX0ni42VbMiBifS5luMVAz0abL8TRmDLNvor9U-m-1Md9wOFH0V5ZCq7khU5_J-xZY&usqp=CAU" alt="Image 3" style="height:100%; width:auto;"/></div>
-                    
-                    <!-- Slide 2 -->
-                    <div class="slide"><img src="https://cdn.prod.website-files.com/646c996dece104b42843d191/67064cf3448ba259421ed82e_66781312ccf931f6847e7b48_Screenshot%25202024-06-23%2520at%25203.20.04%2520PM.png?hl=en-IN" alt="Image 1" style="height:100%; width:auto;"/></div>
-                    <!-- Slide 3 -->
-                    <div class="slide"><img src="https://media.licdn.com/dms/image/D5612AQEz1CWosNVvLQ/article-cover_image-shrink_720_1280/0/1709702686443?e=2147483647&v=beta&t=hDbQKHZ_y3ACkSo-wTuhqLh9dk2jqZ3WqdLhaEO0xZo" alt="Image 5" style="height:100%; width:auto;"></div>
-                </div>
-            </div>         
-        </div>
-    </div>    
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" target="_blank">Facebook</a>
-                <a href="#" target="_blank">Twitter</a>
-                <a href="#" target="_blank">LinkedIn</a>
-            </div>
-        </div>
-    </footer>
       
+    <div style="background-color: #D4CDC5; margin-top:70px;">
+        <div style="display:flex; flex-wrap:wrap; align-items: flex-start;">
+            <!-- Text Content -->
+            <div style="padding:20px; padding-bottom:30px;">
+                <div class="notes" style="margin-top:50px; font-family:'Montserrat';font-weight:700; width:250px">EXPLORE THE FUTURE OF AI WITH US</div>
+            </div>
+    
+            <!-- Vertical Line -->
+            <div class="vertical-line" style="width: 1px; height: 62vh; margin-top:5vh; background-color: black; margin-left:10%;"></div> 
+            <div>
+            <div style="padding:20px; max-width:500px; margin-bottom: 220px;;"><p style="font-family:'Lora';">We decode the latest advancements in artificial intelligence, from generative models to ethical AI, empowering innovators, developers, and enthusiasts to stay ahead of the curve.</p> </div>
+            <button style=" border-radius: 50px;border:#EBFD40; background-color: #EBFD40; color: Black;  display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease; margin-left:10px;">
+                <span style="margin-right: 5px;">Join the Conversation</span>
+                <span style="display: flex; align-items: center; justify-content: center; background-color: black; color: white; width: 25px; height: 25px; border-radius: 50%; font-size: 16px; font-weight: bold; transition: transform 0.2s ease;">→</span>
+            </button>
+            </div>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; align-items: flex-start;">
+            <!-- Text Content -->
+            <div style="padding:20px; padding-bottom:30px;">
+                <div class="notes" style="margin-top:50px; font-family:'Montserrat';font-weight:700; width:250px">EXPLORE THE FUTURE OF AI WITH US</div>
+            </div>
+    
+            <!-- Vertical Line -->
+            <div class="vertical-line" style="width: 1px; height: 62vh; margin-top:5vh; background-color: black; margin-left:10%;"></div> 
+            <div>
+            <div style="padding:20px; max-width:500px; margin-bottom: 220px;;"><p style="font-family:'Lora';">We decode the latest advancements in artificial intelligence, from generative models to ethical AI, empowering innovators, developers, and enthusiasts to stay ahead of the curve.</p> </div>
+            <button style=" border-radius: 50px;border:#EBFD40; background-color: #EBFD40; color: Black;  display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease; margin-left:10px;">
+                <span style="margin-right: 5px;">Join the Conversation</span>
+                <span style="display: flex; align-items: center; justify-content: center; background-color: black; color: white; width: 25px; height: 25px; border-radius: 50%; font-size: 16px; font-weight: bold; transition: transform 0.2s ease;">→</span>
+            </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
