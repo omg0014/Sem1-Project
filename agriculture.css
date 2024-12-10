@@ -74,3 +74,12 @@ li {
     color: #e74c3c;
     font-weight: bold;
 }
+a{
+    color:black;
+}
+a:hover{
+    color:white;
+}
+a:visited{
+    color:White;
+}
